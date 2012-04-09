@@ -1,0 +1,23 @@
+﻿<Window x:Class="TimeTrackerWPF.TimeTracker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TimeTracker"  HorizontalAlignment="Left" VerticalAlignment="Center" SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="startwork" Click="OnStartWork" Grid.Column="0" Grid.Row="0" Content="Start work" Margin="3" />
+        <Button Name="finishwork" Click="OnFinishWork" Grid.Column="0" Grid.Row="1" Content="Finish work" Margin="3" IsEnabled="False" />
+        <Button Name="startbreak" Click="OnStartBreak" Grid.Column="1" Grid.Row="0" Content="Start break" Margin="3" IsEnabled="False" />
+        <Button Name="endbreak" Click="OnEndBreak" Grid.Column="1" Grid.Row="1" Content="End break" Margin="3" IsEnabled="False" />
+        <TextBlock x:Name="worktext" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Text="WorkTime" Margin="3" IsEnabled="True" />
+        
+    </Grid>
+</Window>
