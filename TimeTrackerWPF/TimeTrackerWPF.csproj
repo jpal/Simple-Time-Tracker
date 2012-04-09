@@ -8,7 +8,7 @@
     <ProjectGuid>{C11F6B8F-867E-433E-B9F9-BC0747B1FB53}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TimeTrackerWPF</RootNamespace>
+    <RootNamespace>SimpleTimeTracker</RootNamespace>
     <AssemblyName>TimeTrackerWPF</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

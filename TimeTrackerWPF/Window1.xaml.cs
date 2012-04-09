@@ -12,17 +12,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TimeTrackerWPF
+namespace SimpleTimeTracker
 {
     public partial class TimeTracker : Window
     {
         private DateTime _startTime;
-        //private DateTime _startLunch;
-        private TimeSpan _workingTime = new TimeSpan ();
+        private TimeSpan _workingTime = new TimeSpan();
 
         public TimeTracker()
         {
-            InitializeComponent ();
+            InitializeComponent();
         }
 
         private void OnStartWork( object sender, RoutedEventArgs e )
